@@ -1,0 +1,42 @@
+---
+const data = [
+  {
+    title: 'Desarrollo de Software',
+    description: 'Creamos aplicaciones web y móviles personalizadas, escalables y optimizadas.',
+    icon: {
+      type: 'code-slash',
+      color: 'text-primary',
+    },
+  },
+  {
+    title: 'Soporte y Mantenimiento',
+    description: 'Optimizamos y aseguramos el rendimiento de tus sistemas para evitar interrupciones.',
+    icon: {
+      type: 'wrench-adjustable-circle',
+      color: 'text-success',
+    },
+  },
+  {
+    title: 'Alojamiento en la Nube',
+    description: 'Alojamos tus aplicaciones en la nube con la seguridad y confiabilidad que necesitas.',
+    icon: {
+      type: 'cloud-check',
+      color: 'text-warning',
+    },
+  }
+];
+---
+
+{data.map(card => (
+  <div class="col-md-4">
+    <div class="card bg-transparent-blur text-light shadow-sm p-4 h-100">
+      <div class="mb-3">
+        <i class={"bi display-4 bi-" + card.icon.type + " " + card.icon.color}></i>
+      </div>
+
+      <h3 class="fw-bold">{card.title}</h3>
+
+      <p>{card.description}</p>
+    </div>
+  </div>
+))}

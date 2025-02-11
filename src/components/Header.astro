@@ -19,12 +19,12 @@ const items: NavbarItemType[] = [
 ];
 ---
 
-<Navbar class="navbar-expand-lg bg-lion-dark" data-bs-theme="dark">
+<Navbar class="p-0 navbar-blur navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#welcome">
       <Image src={logo} alt={"Lion-Packages"} class="img-fluid" width={50} />
 
-      <span class="text-lion-orange">{"Lion"}</span><span>{"-Packages"}</span>
+      <span class="text-lion-orange text-shadow">{"Lion"}</span><span class="text-shadow">{"-Packages"}</span>
     </a>
 
     <Navbar.Toggler controls={id} />
