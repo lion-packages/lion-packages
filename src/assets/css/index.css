@@ -52,7 +52,18 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  background: radial-gradient(ellipse at left, #ff8463, transparent 50%);
+  background: radial-gradient(ellipse at left, #ff8463, transparent 65%);
+  background-color: #111111;
+  backdrop-filter: blur(10px);
+}
+
+.bg-blur-right-ellipse {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: radial-gradient(ellipse at right, #ff8463, transparent 70%);
   background-color: #111111;
   backdrop-filter: blur(10px);
 }

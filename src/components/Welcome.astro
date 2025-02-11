@@ -1,9 +1,8 @@
 ---
-import 'bootstrap/dist/css/bootstrap.min.css';
 import InfoCard from './InfoCard.astro';
 import ContactButton from './ContactButton.astro';
 ---
-<div class="bg-blur-center-100 py-5">
+<div class="bg-blur-center-100 py-5" id="welcome">
   <section class="text-white text-center py-5">
     <div class="container">
       <h1 class="display-4 fw-bold text-shadow">Soluciones de Software a la Medida</h1>
@@ -17,5 +16,30 @@ import ContactButton from './ContactButton.astro';
   </section>
   
   
-  <InfoCard />
+  <InfoCard data={[
+    {
+      title: 'Desarrollo de Software',
+      description: 'Creamos aplicaciones web y móviles personalizadas, escalables y optimizadas.',
+      icon: {
+        type: 'code-slash',
+        color: 'primary',
+      },
+    },
+    {
+      title: 'Soporte y Mantenimiento',
+      description: 'Optimizamos y aseguramos el rendimiento de tus sistemas para evitar interrupciones.',
+      icon: {
+        type: 'wrench-adjustable-circle',
+        color: 'success',
+      },
+    },
+    {
+      title: 'Alojamiento en la Nube',
+      description: 'Alojamos tus aplicaciones en la nube con la seguridad y confiabilidad que necesitas.',
+      icon: {
+        type: 'cloud-check',
+        color: 'warning',
+      },
+    }
+  ]} />
 </div>
