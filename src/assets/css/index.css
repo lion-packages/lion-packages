@@ -1,0 +1,25 @@
+:root {
+  --bg-lion-orange: #ff8731;
+  --bg-lion-dark: #111111;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-lion-orange {
+  background-color: var(--bg-lion-orange);
+}
+
+.bg-lion-dark {
+  background-color: var(--bg-lion-dark);
+}
+
+.text-lion-orange {
+  color: var(--bg-lion-orange);
+}
+
+.text-lion-dark {
+  color: var(--bg-lion-dark);
+}
