@@ -101,6 +101,14 @@
   box-shadow: 0 1px #ffffffbf inset;
 }
 
+.navbar-blur {
+  background-color: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .dropdown-menu-blur {
   --bs-dropdown-color: #dee2e6;
   --bs-dropdown-bg: rgba(17, 17, 17, 0.8);
