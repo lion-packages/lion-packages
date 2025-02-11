@@ -1,6 +1,7 @@
 ---
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InfoCard from './InfoCard.astro';
+import ContactButton from './ContactButton.astro';
 ---
 <div class="bg-blur-center-100 py-5">
   <section class="text-white text-center py-5">
@@ -11,13 +12,10 @@ import InfoCard from './InfoCard.astro';
         Desarrollo, mantenimiento y alojamiento en la nube.
       </p>
 
-      <a href="#contacto" class="btn btn-orange-custom btn-lg mt-3">Contáctanos</a>
+      <ContactButton />
     </div>
   </section>
   
-  <section class="container py-5">
-    <div class="row text-center">
-      <InfoCard />
-    </div>
-  </section>  
+  
+  <InfoCard />
 </div>

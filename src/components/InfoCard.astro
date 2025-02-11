@@ -26,17 +26,20 @@ const data = [
   }
 ];
 ---
+<section class="container py-5">
+  <div class="row text-center">
+    {data.map(card => (
+      <div class="col-md-4">
+        <div class="card bg-transparent-blur text-light shadow-sm p-4 h-100">
+          <div class="mb-3">
+            <i class={"bi display-4 bi-" + card.icon.type + " " + card.icon.color}></i>
+          </div>
 
-{data.map(card => (
-  <div class="col-md-4">
-    <div class="card bg-transparent-blur text-light shadow-sm p-4 h-100">
-      <div class="mb-3">
-        <i class={"bi display-4 bi-" + card.icon.type + " " + card.icon.color}></i>
+          <h3 class="fw-bold">{card.title}</h3>
+
+          <p>{card.description}</p>
+        </div>
       </div>
-
-      <h3 class="fw-bold">{card.title}</h3>
-
-      <p>{card.description}</p>
-    </div>
+    ))}
   </div>
-))}
+</section>  
