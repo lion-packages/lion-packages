@@ -1,0 +1,15 @@
+services:
+    app:
+        container_name: lion-packages-app
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "5175:5175"
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - lion
+networks:
+    lion:
+        driver: bridge
