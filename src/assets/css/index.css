@@ -45,7 +45,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  background: radial-gradient(circle at top, #ff8463, transparent 64%);
+  background: radial-gradient(circle at top, #ff8463, transparent 70%);
   background-color: #111111;
   backdrop-filter: blur(10px);
 }
