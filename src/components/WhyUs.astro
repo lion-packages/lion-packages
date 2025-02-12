@@ -1,0 +1,116 @@
+---
+import InfoCard from "./InfoCard.astro";
+---
+
+<section class="text-white py-5" id="why-us">
+  <div class="container">
+    <div class="text-center mb-4 text-light">
+      <h2 class="fw-bold text-shadow">¿Por qué elegirnos?</h2>
+
+      <p class="lead text-shadow">
+        Nuestro compromiso es ofrecer calidad, seguridad y escalabilidad en cada proyecto.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-blur-right-ellipse">
+    <InfoCard data={[
+      {
+        title: 'Seguridad Garantizada',
+        description: 'Implementamos estándares de seguridad como ISO y mejores prácticas para proteger tus datos.',
+        icon: {
+          type: 'shield-lock-fill',
+          color: 'success',
+        }
+      },
+      {
+        title: 'Soluciones Escalables',
+        description: 'Ofrecemos soluciones personalizadas y escalables para adaptarse a tus necesidades cambiantes.',
+        icon: {
+          type: 'cloud-arrow-up-fill',
+          color: 'success',
+        }
+      },
+      {
+        title: 'Soporte Continuo',
+        description: 'Brindamos un servicio de soporte continuo para garantizar la satisfacción del cliente.',
+        icon: {
+          type: 'person-lines-fill',
+          color: 'danger',
+        }
+      },
+      {
+        title: 'Soporte 24/7',
+        description: 'Estamos disponibles para resolver tus dudas y garantizar el correcto funcionamiento de tu sistema.',
+        icon: {
+          type: 'headset',
+          color: 'warning',
+        }
+      },
+      {
+        title: 'Equipo Profesional',
+        description: 'Contamos con un equipo de ingenieros especializados en tecnologías actuales.',
+        icon: {
+          type: 'people-fill',
+          color: 'lion-orange',
+        }
+      },
+      {
+        title: 'Precios Competitivos',
+        description: 'Ofrecemos precios competitivos para satisfacer las necesidades de nuestros clientes.',
+        icon: {
+          type: 'currency-dollar',
+          color: 'lion-orange',
+        }
+      },
+      {
+        title: 'Garantía de Calidad',
+        description: 'Garantizamos la calidad de nuestros productos y servicios para garantizar la satisfacción del cliente.',
+        icon: {
+          type: 'check-circle-fill',
+          color: 'lion-orange',
+        }
+      },
+      {
+        title: 'Mantenimiento Continuo',
+        description: 'Ofrecemos mantenimiento y actualizaciones periódicas para mantener tu sistema en el mejor estado.',
+        icon: {
+          type: 'gear-fill',
+          color: 'primary',
+        }
+      },
+      {
+        title: 'Soporte Tecnológico',
+        description: 'Brindamos soporte tecnológico para resolver problemas y optimizar tu experiencia.',
+        icon: {
+          type: 'person-lines-fill',
+          color: 'lion-orange',
+        }
+      },
+      {
+        title: 'Infraestructura en la Nube',
+        description: 'Ofrecemos infraestructura en la nube para almacenar, procesar y compartir datos.',
+        icon: {
+          type: 'cloud-arrow-up-fill',
+          color: 'primary',
+        }
+      },
+      {
+        title: 'Seguridad en la Nube',
+        description: 'Implementamos medidas de seguridad en la nube para proteger tus datos y aplicaciones.',
+        icon: {
+          type: 'cloud-arrow-up-fill',
+          color: 'danger',
+        }
+      },
+      {
+        title: 'Soporte en la Nube',
+        description: 'Brindamos soporte continuo en la nube para garantizar el correcto funcionamiento de tus aplicaciones.',
+        icon: {
+          type: 'cloud-arrow-up-fill',
+          color: 'success',
+        }
+      },
+    ]} />
+  </div>
+</section>

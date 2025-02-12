@@ -1,0 +1,35 @@
+---
+import { Navbar } from 'astro-bootstrap';
+import type { NavbarItemType } from 'astro-bootstrap';
+import logo from '../assets/icon-transparent-orange.png';
+import { Image } from 'astro:assets';
+
+/**
+ * Logic
+ */
+
+const id = 'navbar-lion-packages';
+
+const items: NavbarItemType[] = [
+  { 
+    text: 'Contacto',
+    href: '#contact'
+  },
+];
+---
+
+<Navbar class="p-0 navbar-blur navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="#welcome">
+      <Image src={logo} alt={"Lion-Packages"} class="img-fluid" width={50} loading={"lazy"} />
+
+      <span class="text-lion-orange text-shadow">{"Lion"}</span><span class="text-shadow">{"-Packages"}</span>
+    </a>
+
+    <Navbar.Toggler controls={id} />
+
+    <Navbar.Collapse {id}>
+      <Navbar.Items {items} class="ms-auto mb-2 mb-lg-0" />
+    </Navbar.Collapse>
+  </div>
+</Navbar>
