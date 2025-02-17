@@ -4,9 +4,16 @@ const { data } = Astro.props;
 
 <section class="container py-5">
   <div class="row text-center">
-    {data.map(item => (
+    {data.map((item: {
+      icon?: {
+        type: string;
+        color: string;
+      };
+      title: string;
+      description: string;
+    }) => (
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mx-auto mb-3">
-        <div class="card bg-transparent-blur text-light shadow-sm p-3 h-100 border-lion-light">
+        <div class="shadow-lg p-3 h-100 rounded">
           {item.icon && (
             <div class="mb-3">
               <i class={"bi display-4 bi-" + item.icon.type + " text-" + item.icon.color}></i>
