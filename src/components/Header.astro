@@ -1,8 +1,8 @@
 ---
-import { Navbar } from 'astro-bootstrap';
 import type { NavbarItemType } from 'astro-bootstrap';
-import logo from '../assets/icon-transparent-orange.png';
+import { Navbar } from 'astro-bootstrap';
 import { Image } from 'astro:assets';
+import logo from '../assets/icon-transparent-orange.png';
 
 /**
  * Logic
@@ -11,19 +11,19 @@ import { Image } from 'astro:assets';
 const id = 'navbar-lion-packages';
 
 const items: NavbarItemType[] = [
-  { 
-    text: 'Contacto',
-    href: '#contact'
-  },
+  {
+    text: "Sobre Nosotros",
+    href: "/about-us"
+  }
 ];
 ---
 
 <Navbar class="p-0 navbar navbar-expand-lg sticky-top bg-light shadow-sm" data-bs-theme="light">
   <div class="container">
-    <a class="navbar-brand" href="#welcome">
+    <a class="navbar-brand" href="/">
       <Image src={logo} alt={"Lion-Packages"} class="img-fluid" width={50} loading={"lazy"} />
 
-      <span class="text-lion-orange">{"Lion"}</span><span>{"-Packages"}</span>
+      <span>{"Lion-Packages"}</span>
     </a>
 
     <Navbar.Toggler controls={id} />
