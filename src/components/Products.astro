@@ -1,0 +1,75 @@
+---
+import { Image } from 'astro:assets';
+
+import lion_parking_appscreen_1 from '../assets/img/lion-parking-appscreens/1.jpg';
+import lion_parking_appscreen_2 from '../assets/img/lion-parking-appscreens/2.jpg';
+import lion_parking_appscreen_3 from '../assets/img/lion-parking-appscreens/3.jpg';
+import lion_parking_appscreen_4 from '../assets/img/lion-parking-appscreens/4.jpg';
+import lion_parking_appscreen_5 from '../assets/img/lion-parking-appscreens/5.jpg';
+
+const products = [
+    {
+        name: "Lion-Parking",
+        link: "https://parking.lion-packages.com",
+        description: `
+            Un software diseñado para administrar negocios de parqueo con
+            control total: tarifas, usuarios, zonas, espacios y reportes en un
+            solo lugar.
+            `,
+        images: [
+            lion_parking_appscreen_1,
+            lion_parking_appscreen_2,
+            lion_parking_appscreen_3,
+            lion_parking_appscreen_4,
+            lion_parking_appscreen_5,
+        ],
+    },
+];
+---
+
+<section id="lion-products">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-title">Nuestros productos</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            {products.map((product) => (
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-3">
+                    <div class="rounded bg-white p-4 shadow-sm">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h5 class="mb-0 text-lion-orange">{product.name}</h5>
+
+                            <a
+                                role="button"
+                                href={product.link}
+                                target="_blank"
+                                class="btn btn-link text-lion-orange text-decoration-none"
+                            >
+                                Ver
+                            </a>
+                        </div>
+
+                        <p class="text-muted mb-1">
+                            {product.description}
+                        </p>
+
+                        <div class="d-flex overflow-x-auto pb-2 text-center">
+                            {product.images.map((image, i) => (
+                                <Image
+                                    key={i}
+                                    src={image}
+                                    alt={`${product.name} screenshot ${i + 1}`}
+                                    class="flex-shrink-0 me-1 imf-fluid shadow-sm rounded"
+                                    style={{ width: '300px', height: '550px' }}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
