@@ -1,66 +1,83 @@
 ---
+import logo from '../assets/lion-packages.svg';
+
 const year = new Date().getFullYear();
 ---
 
-<hr>
+<footer id="footer" class="pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <div class="col-md-9 mb-4 text-center text-md-start">
+                <a role="button" href="/">
+                    <img src={logo.src} alt="Lion-Parking" class="fluid mb-3" style={{ height: "55px", width: "auto" }} />
+                </a>
 
-<footer class="py-4" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h4 class="fw-bold text-lion-orange">Lion-Packages</h4>
+                <p class="footer-desc">
+                    Soluciones de software a la medida.
+                </p>
+            </div>
 
-        <p class="text-muted">
-          Desarrollo de software a la medida, soporte y mantenimiento, y alojamiento en la nube.
-        </p>
-      </div>
+            <!-- <div class="col-md-3 mb-4">
+                <h5 class="fw-bold footer-title">Ayuda</h5>
 
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="footer-link">Centro de ayuda</a>
+                    </li>
 
-        <ul class="list-unstyled">
-          <li>
-            <a href="#welcome" class="text-lion-orange text-decoration-none">
-              {"Inicio"}
-            </a>
-          </li>
+                    <li>
+                        <a href="#" class="footer-link">Soporte técnico</a>
+                    </li>
 
-          <li>
-            <a href="#why-us" class="text-lion-orange text-decoration-none">
-              {"Servicios"}
-            </a>
-          </li>
+                    <li>
+                        <a href="#" class="footer-link">Contacto</a>
+                    </li>
+                </ul>
+            </div> -->
 
-          <li>
-            <a href="#about" class="text-lion-orange text-decoration-none">
-              {"Nosotros"}
-            </a>
-          </li>
-        </ul>
-      </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold footer-title">Síguenos</h5>
 
-      <div class="col-md-4 mb-3">
-        <h5 class="fw-bold">Contáctanos</h5>
+                <div
+                        class="d-flex justify-content-center justify-content-md-start gap-3"
+                >
+                    <a
+                            href="https://www.facebook.com/profile.php?id=61573988267082"
+                            class="footer-social text-lion-orange"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
 
-        <p>
-          <i class="bi bi-envelope-fill text-primary"></i> lion.packages@gmail.com
-        </p>
+                    <a
+                            href="https://www.instagram.com/lion_packages/"
+                            class="footer-social text-lion-orange"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
 
-        <p><i class="bi bi-whatsapp text-success"></i> +57 315 193 2919</p>
-        <p>
-          <i class="bi bi-geo-alt-fill text-danger"></i> Girardot, Cundinamarca, Colombia
-        </p>
-      </div>
+                    <a
+                            href="https://linkedin.com/company/lion-packages"
+                            class="footer-social text-lion-orange"
+                    >
+                        <i class="bi bi-linkedin text-lion-orange"></i>
+                    </a>
+
+                    <a
+                            href="https://www.tiktok.com/@lion_packages"
+                            class="footer-social"
+                    >
+                        <i class="bi bi-tiktok text-lion-orange"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="text-center small copyright">
+            © 2025 <span class="text-lion-orange">Lion-Packages</span>. Todos  los derechos reservados.
+            <span class="text-lion-orange">Lion-Packages</span> es una empresa de desarrollo de software a la medida y
+            soluciones en la nube.
+        </div>
     </div>
-
-    <hr class="border-secondary">
-
-    <div class="text-center">
-      <p class="mb-0">
-        © {year} <strong><span class="text-lion-orange">Lion-Packages</span></strong>. Todos los derechos reservados. 
-        <strong><span class="text-lion-orange">Lion-Packages</span></strong> es una empresa de desarrollo de software
-        a la medida y soluciones en la nube.
-      </p>
-    </div>
-  </div>
 </footer>
