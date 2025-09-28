@@ -1,7 +1,6 @@
 ---
 import '../assets/css/index.css';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
 import Welcome from '../components/Welcome.astro';
 import WhyUs from '../components/WhyUs.astro';
 import Layout from '../layouts/Layout.astro';
@@ -10,13 +9,13 @@ import { Image } from 'astro:assets';
 ---
 
 <Layout>
-    <Image src={background} alt={"background"} id="background" fetchpriority="high" />
+	<div id="container">
+        <Image src={background} alt={"background"} id="background" fetchpriority="high" />
 
-	<Header />
-	
-	<Welcome />
+        <Welcome />
 
-	<WhyUs />
+        <!-- <WhyUs /> -->
 
-	<Footer />
+        <Footer />
+    </div>
 </Layout>
