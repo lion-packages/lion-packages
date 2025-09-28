@@ -4,13 +4,9 @@ import { Navbar } from 'astro-bootstrap';
 import { Image } from 'astro:assets';
 import logo from '../assets/icon-transparent-orange.png';
 
-/**
- * Logic
- */
-
 const id = 'navbar-lion-packages';
 
-const items: NavbarItemType[] = [
+const items: { text: string; href: string }[] = [
   {
     text: "Sobre Nosotros",
     href: "/about-us"
