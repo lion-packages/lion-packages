@@ -1,46 +1,35 @@
 ---
 import InfoCard from './InfoCard.astro';
 import ContactButton from './ContactButton.astro';
+
+import logo from '../assets/lion-packages.svg';
 ---
 
-<div class="py-5" id="welcome">
-  <section class="text-center py-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold text-lion-orange">Soluciones de Software a la Medida</h1>
+<main>
+    <section id="hero">
+        <a href="/">
+            <img
+                    src={logo.src}
+                    alt="Astro Homepage"
+                    class="img-fluid mb-1"
+                    style={{ height: "55px", width: "auto" }}
+            />
+        </a>
 
-      <p class="lead">
-        Desarrollo, mantenimiento y alojamiento en la nube.
-      </p>
+        <h1>
+            Soluciones de software a la medida.
+        </h1>
 
-      <ContactButton />
-    </div>
-  </section>
-  
-  
-  <InfoCard data={[
-    {
-      title: 'Desarrollo de Software',
-      description: 'Creamos aplicaciones web y móviles personalizadas, escalables y optimizadas.',
-      icon: {
-        type: 'code-slash',
-        color: 'primary',
-      },
-    },
-    {
-      title: 'Soporte y Mantenimiento',
-      description: 'Optimizamos y aseguramos el rendimiento de tus sistemas para evitar interrupciones.',
-      icon: {
-        type: 'wrench-adjustable-circle',
-        color: 'success',
-      },
-    },
-    {
-      title: 'Alojamiento en la Nube',
-      description: 'Alojamos tus aplicaciones en la nube con la seguridad y confiabilidad que necesitas.',
-      icon: {
-        type: 'cloud-check',
-        color: 'warning',
-      },
-    }
-  ]} />
-</div>
+        <p class="description">
+            Creamos aplicaciones web y móviles personalizadas, escalables y
+            optimizadas. Alojamos tus aplicaciones en la nube con la seguridad
+            que necesitas.
+        </p>
+
+        <section id="links" class="my-3">
+            <a class="button" id="btn-demo" role="button">
+                Comunícate con nosotros
+            </a>
+        </section>
+    </section>
+</main>

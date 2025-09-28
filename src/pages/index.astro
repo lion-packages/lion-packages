@@ -1,18 +1,24 @@
 ---
 import '../assets/css/index.css';
 import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
 import Welcome from '../components/Welcome.astro';
 import WhyUs from '../components/WhyUs.astro';
 import Layout from '../layouts/Layout.astro';
+import background from '../assets/background.svg';
+import { Image } from 'astro:assets';
+import Products from "../components/Products.astro";
 ---
 
 <Layout>
-	<Header />
-	
-	<Welcome />
+	<div id="container">
+        <Image src={background} alt={"background"} id="background" fetchpriority="high" />
 
-	<WhyUs />
+        <Welcome />
 
-	<Footer />
+        <WhyUs />
+
+        <Products />
+
+        <Footer />
+    </div>
 </Layout>
