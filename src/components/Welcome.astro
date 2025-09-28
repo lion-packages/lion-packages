@@ -27,9 +27,24 @@ import logo from '../assets/lion-packages.svg';
         </p>
 
         <section id="links" class="my-3">
-            <a class="button" id="btn-demo" role="button">
+            <a class="button" id="btn-support" role="button">
                 Comunícate con nosotros
             </a>
         </section>
     </section>
 </main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("btn-support");
+
+        if (btn) {
+            btn.addEventListener("click", () => {
+                window.open(
+                    "https://wa.me/573151932919?text=Hola%2C%20quiero%20contratar%20un%20servicio",
+                    "_blank"
+                );
+            });
+        }
+    });
+</script>
